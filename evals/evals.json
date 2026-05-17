@@ -1,0 +1,25 @@
+{
+  "skill_name": "viral-launch",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We are launching an AI tool that turns a founder's messy Loom demo into a polished launch video and X launch script. Build the launch angle and final X post.",
+      "expected_output": "Should research positioning, produce bold claim candidates, reject generic AI video-maker framing, create hooks, run weapons/mom/technical checks, and deliver a final X launch script."
+    },
+    {
+      "id": 2,
+      "prompt": "帮我给一个开发者工具写 Product Hunt launch。它能把 GitHub issues 自动整理成产品 roadmap。先不要太长，但要有角度。",
+      "expected_output": "Should use quick or standard mode, identify developer/product-manager pain, create bold claims, avoid generic productivity copy, and provide Product Hunt-friendly launch copy."
+    },
+    {
+      "id": 3,
+      "prompt": "I am launching a privacy-first personal CRM for creators. I only have a short product description and no website yet. Help me figure out the viral launch positioning.",
+      "expected_output": "Should ask only necessary brief questions or proceed with assumptions, produce research plan, bold claim candidates, and note missing proof before final script."
+    },
+    {
+      "id": 4,
+      "prompt": "We need a deep launch script for a B2B AI sales copilot. Include Reddit, X, YouTube, competitor research, and a final demo narrative.",
+      "expected_output": "Should choose deep mode, parallelize research roles, compile findings, produce bold claim candidates, review draft with multiple reviewers, and preserve source links."
+    }
+  ]
+}
