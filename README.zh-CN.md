@@ -2,6 +2,8 @@
 
 一个“先研究、再定位、最后写发布文案”的 agent skill，用来把产品变成更有传播力、更有证据链的 launch narrative。
 
+默认 README 是中文优先的中英文双语版本：见 [README.md](README.md)。
+
 大多数 launch 文案失败，不是因为句子不够华丽，而是因为一上来就写：`Excited to announce...`、泛泛的功能列表、模糊的 AI 承诺、软弱的 CTA。Viral Launch 会强制 agent 先理解产品、研究市场、找到 bold claim、审查 hook、证明 demo 叙事，最后才写最终稿。
 
 它适合 AI 产品、SaaS、开发者工具、Product Hunt 发布、X/Twitter launch post、demo script、founder announcement、waitlist launch，以及任何需要更锐利公开叙事的产品。
@@ -47,33 +49,36 @@ viral-launch/
 
 ### 1. 安装 skill
 
-把本仓库复制或软链接到你的 agent skills 目录。
+把本仓库 clone 到你的 agent skills 目录。
 
 Hermes Agent：
 
 ```bash
 mkdir -p ~/.hermes/skills
-ln -s /path/to/viral-launch ~/.hermes/skills/viral-launch
+git clone https://github.com/ryrenz/viral-launch.git ~/.hermes/skills/viral-launch
 ```
 
 Claude Code：
 
 ```bash
 mkdir -p ~/.claude/skills
-ln -s /path/to/viral-launch ~/.claude/skills/viral-launch
+git clone https://github.com/ryrenz/viral-launch.git ~/.claude/skills/viral-launch
 ```
 
 Codex 风格本地 skills：
 
 ```bash
 mkdir -p ~/.codex/skills
-ln -s /path/to/viral-launch ~/.codex/skills/viral-launch
+git clone https://github.com/ryrenz/viral-launch.git ~/.codex/skills/viral-launch
 ```
 
-也可以直接复制：
+如果你想同时维护源码和多个 agent 入口，可以用软链接：
 
 ```bash
-cp -R /path/to/viral-launch ~/.hermes/skills/viral-launch
+git clone https://github.com/ryrenz/viral-launch.git ~/skills/viral-launch
+ln -s ~/skills/viral-launch ~/.claude/skills/viral-launch
+ln -s ~/skills/viral-launch ~/.codex/skills/viral-launch
+ln -s ~/skills/viral-launch ~/.hermes/skills/viral-launch
 ```
 
 ### 2. 让 agent 使用它

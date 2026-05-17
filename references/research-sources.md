@@ -15,7 +15,7 @@
 | X/Twitter | `twscrape`, baoyu-url-to-markdown, Chrome/web-access | Tavily Search / XCrawl Search | launch posts、replies、quote language、viral hooks |
 | Reddit | Tavily Search with `site:reddit.com` | XCrawl Search/Scrape | 用户抱怨、替代方案、购买阻力 |
 | GitHub | `gh` CLI / GitHub app | Tavily Search | developer tools 的 README、issues、stars、user language |
-| Local brain | `~/brain/wiki`, `~/brain/raw` | rg | 过往知识、写作风格、已整理素材 |
+| Local knowledge base | Notes, wiki, raw materials | rg / local search | 过往知识、写作风格、已整理素材 |
 
 ## Required Freshness
 
